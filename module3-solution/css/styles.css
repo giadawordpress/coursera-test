@@ -93,10 +93,23 @@ div.sectiontxt{
 	color: #ff9933;
 }
 
+div.section-custom{
+	margin: 10px;
+	background: #FFE9B5;
+	color: #000000;
+	padding: 15px;
+	height: 1000px;
+}
+
+.section-custom a {
+	color: #FF9900;
+}
+
+
 /** Media queries **/
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: @screen-lg-min) {
 .navbar-brand h1 {font-size: 2em;}
 h2 { font-size: 1.8em; }
 h3 { font-size: 1.5em; }
@@ -105,7 +118,7 @@ h3 { font-size: 1.5em; }
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) { 
+@media (min-width: @screen-md-min) { 
 .navbar-brand h1 {font-size: 1.8em;}
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.3em; }
@@ -114,14 +127,14 @@ h3 { font-size: 1.3em; }
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: @screen-sm-min) { 
 .navbar-brand h1 {font-size: 1.5em;}
 h2 { font-size: 1.3em; }
 h3 { font-size: 1.1em; }
 }
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) { 
+@media (min-width: @screen-xs-min) { 
 .navbar-brand h1 {font-size: 1.5em;} 
 h2 { font-size: 1.3em; }
 h3 { font-size: 1.1em; }
